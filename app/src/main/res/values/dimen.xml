@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padfifteen">15dp</dimen>
+    <dimen name="bottom20pd">20dp</dimen>
+    <dimen name="bottom10pd">10dp</dimen>
+    <dimen name="pdsmalltext">70dp</dimen>
+    <dimen name="bigtext">35dp</dimen>
+    <dimen name="bigtexttop">150dp</dimen>
+    <dimen name="btn2">100dp</dimen>
+    <dimen name="smalltext">12dp</dimen>
+    <dimen name="medtext">20dp</dimen>
+    <dimen name="form">15dp</dimen>
+    <dimen name="bottom5pd">5dp</dimen>
+</resources>

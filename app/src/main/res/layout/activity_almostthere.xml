@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:padding="30dp"
+    tools:context=".almostthere">
+
+    <TextView
+        android:id="@+id/almost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/almost"
+        style="@style/bigtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bigtexttop"
+        android:layout_marginBottom="@dimen/bottom20pd"
+        />
+    <TextView
+        android:id="@+id/ty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ty"
+        android:layout_below="@+id/almost"
+        style="@style/smalltext"
+        android:layout_marginBottom="@dimen/btn2"
+        />
+    <Button
+        android:id="@+id/btnverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:layout_below="@id/ty"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/whitetext"
+        />
+</RelativeLayout>

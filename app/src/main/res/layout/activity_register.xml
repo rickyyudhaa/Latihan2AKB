@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-10dp"
+        app:srcCompat="@drawable/ic_header"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/ic_header_back"
+        />
+
+    <TextView
+        style="@style/medtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/regis" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        tools:context=".Register">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:paddingBottom="@dimen/padfifteen"
+        android:layout_marginBottom="@dimen/bottom5pd"
+        android:textSize="@dimen/form"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:hint="@string/email"
+        android:paddingBottom="@dimen/padfifteen"
+        android:layout_marginBottom="@dimen/bottom5pd"
+        android:textSize="@dimen/form"
+        />
+    <EditText
+        android:id="@+id/telp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:hint="@string/phone"
+        android:paddingBottom="@dimen/padfifteen"
+        android:layout_marginBottom="@dimen/bottom5pd"
+        android:textSize="@dimen/form"
+        />
+        
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_below="@id/telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <RadioButton
+                android:id="@+id/radiomale"
+                android:checked="true"
+                android:text="@string/male"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/grayform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:id="@+id/radiofemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="@string/female"
+                android:textColor="@color/grayform"
+                />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/bloodtype"
+            android:entries="@array/bt"
+            android:layout_below="@id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            />
+        <Spinner
+            android:id="@+id/reshus"
+            android:entries="@array/resh"
+            android:layout_below="@id/radiogroup"
+            android:layout_toRightOf="@id/bloodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            />
+
+        <EditText
+            android:id="@+id/pwdregist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodtype"
+            android:hint="@string/pwd"
+            android:paddingBottom="@dimen/padfifteen"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            android:textSize="@dimen/form"
+            />
+
+        <EditText
+            android:id="@+id/retypepwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwdregist"
+            android:hint="@string/retype"
+            android:paddingBottom="@dimen/padfifteen"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            android:textSize="@dimen/form"
+            />
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_below="@id/retypepwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiopersonal"
+                android:checked="true"
+                android:text="@string/personal"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/grayform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:id="@+id/radioorg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:text="@string/org"
+                android:textColor="@color/grayform"
+                />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/job"
+            android:entries="@array/job"
+            android:layout_below="@id/radiogroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            />
+
+        <EditText
+            android:id="@+id/homeAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job"
+            android:hint="@string/addr"
+            android:paddingBottom="@dimen/padfifteen"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            android:textSize="@dimen/form"
+            />
+        <EditText
+            android:id="@+id/defloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeAdd"
+            android:hint="@string/loc"
+            android:paddingBottom="@dimen/padfifteen"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            android:textSize="@dimen/form"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/defloc"
+            android:text="@string/agree"
+            android:textColor="@color/grayform"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            />
+        <Button
+            android:id="@+id/btnregist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/regis"
+            android:layout_below="@id/checkbok"
+            android:background="@drawable/roundbutton2"
+            android:textColor="@color/skyblue"
+            android:layout_marginBottom="@dimen/bottom5pd"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
+
